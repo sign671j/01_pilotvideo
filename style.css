@@ -1,0 +1,127 @@
+* {
+  all: unset;
+
+  display: revert;
+
+  cursor: revert;
+
+  box-sizing: border-box;
+}
+
+/***************** General Layout *****************/
+
+nav {
+  list-style: none;
+  font-family: "Koulen", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 190%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+header {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+hr {
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 0.5px;
+  grid-column: 1 / span 4;
+}
+
+/***************** Grid Layout *****************/
+
+@media (min-width: 600px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.grid_1-1-1-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_1-1-1-1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.col_1-1 {
+  grid-column: 3 / span 2;
+  grid-template-rows: 1 / span 1;
+  padding-bottom: 50px;
+}
+
+.col_1-2 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+  text-align: right;
+  margin-top: 150px;
+}
+
+.col_1-3 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  padding-bottom: 50px;
+}
+
+.col_1-4 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  padding-bottom: 50px;
+}
+
+.col_1-6 {
+  grid-column: 1 / span 4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col_1-7 {
+  grid-column: 1 / span 2;
+  text-align: right;
+  padding-top: 50px;
+  margin-top: 35%;
+}
+
+.col_1-8 {
+  grid-column: 3 / span 2;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+/***************** Tekst Layout *****************/
+
+.overskrift {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  font-size: 825%;
+}
+
+p {
+  font-family: "Akshar", sans-serif;
+  font-size: 130%;
+  font-weight: 300;
+}
